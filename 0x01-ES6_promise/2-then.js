@@ -7,5 +7,4 @@ export default function handleResponseFromAPI(promise) {
       console.log('Got a response from the API'); // Log for every resolution
       return new Error(); // Return empty error object on reject
     });
-  }
-  
+}
