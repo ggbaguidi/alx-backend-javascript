@@ -3,7 +3,7 @@ function handleResponseFromAPI(promise) {
   if (promise) {
     return {
       status: 200,
-      body: 'Success',
+      body: 'success',
     };
   }
   return (new Error());
