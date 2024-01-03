@@ -1,5 +1,5 @@
 function handleResponseFromAPI(promise) {
-  console.log('Got a response from the API'); // Log for every resolution
+  console.log('Got a response from the API');
   if (promise) {
     return {
       status: 200,
