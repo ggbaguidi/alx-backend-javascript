@@ -1,14 +1,14 @@
 const fs = require('node:fs');
 
 function countStudents(fileName) {
+  const endData = {};
+  let NUMBER_OF_STUDENTS = 0;
   try {
-    const endData = {};
     const fields = [];
     let fieldIndex;
     let firstNameIndex;
     const file = fs.readFileSync(fileName, 'utf-8');
     const data = file.toString().split('\n');
-    let NUMBER_OF_STUDENTS = 0;
     data.forEach((row) => {
       if (row.includes('firstname') && row.includes('field')) {
         const header = row.toString().split(',');
